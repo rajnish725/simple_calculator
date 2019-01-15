@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>my cal</title>
+
+    <style>
+    body{
+      background-color: #efefef;
+    }
+    #container{
+
+      width: 270px;
+      height: 320px;
+      background-color: white;
+      margin: 0px auto;
+      border-top: 40px groove red;
+      border-bottom: 40px ridge red;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px #323232;
+    }
+    input[type=text]{
+      width: 90%;
+      height: 30px;
+      margin: 3px;
+
+    }
+    input[type=button]{
+
+      width:50px;
+      height: 30px;
+      margin-left: 10px;
+      margin-top: 5PX;
+    }
+
+    </style>
+  </head>
+  <body>
+<h3> web calculater<h3/>
+  <div id="container">
+<form  name="form">
+    <input type="text" name="result"><br>
+    <input type="button" value="1" onclick="document.form.result.value+=1">
+    <input type="button" value="2" onclick="document.form.result.value+=2">
+    <input type="button" value="3" onclick="document.form.result.value+=3">
+    <input type="button" value="4" onclick="document.form.result.value+=4">
+    <br><br>
+    <input type="button" value="5" onclick="document.form.result.value+=5">
+    <input type="button" value="6" onclick="document.form.result.value+=6">
+    <input type="button" value="7" onclick="document.form.result.value+=7">
+    <input type="button" value="8" onclick="document.form.result.value+=8"><br>
+<br>
+    <input type="button" value="9" onclick="document.form.result.value+=9">
+    <input type="button" value="0" onclick="document.form.result.value+=0">
+    <input type="button" value="."onclick="document.form.result.value+='. '">
+    <input type="button" value="+"onclick="document.form.result.value+='+'">
+    <br><br>
+    <input type="button" value="-"onclick="document.form.result.value+='-'">
+    <input type="button" value="*" onclick="document.form.result.value+='*'">
+    <input type="button" value="/" onclick="document.form.result.value+='/'">
+   <input type="button" value="%" onclick="document.form.result.value +='%'">
+<br><br>
+<input style="width:60%;,height:40px;" type="button" value="=" onclick="document.form.result.value = eval(document.form.result.value)">
+<input style="width:25%;,height:40px;" type="button" value="C" onclick="document.form.result.value=''"></form>
+  </div>
+  </body>
+</html>
